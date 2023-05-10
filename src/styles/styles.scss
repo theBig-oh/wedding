@@ -1,0 +1,24 @@
+@import './settings.scss';
+@import './reset.scss';
+@import './PageContent/index.scss';
+
+body {
+  background: $bodyBackground;
+  display: flex;
+  justify-content: center;
+}
+
+.bodyContain {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: max-content;
+  box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.5);
+  position: relative;
+}
+
+.bodyContainerItem {
+  transition: all ease 0.3s;
+  background: transparent;
+  height: 100vh;
+}

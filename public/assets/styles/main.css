@@ -1,0 +1,257 @@
+/*!*********************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/string-replace-loader/index.js??ruleSet[1].rules[2].use[2]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[2].use[3]!./node_modules/sass-loader/dist/cjs.js!./src/styles/styles.scss ***!
+  \*********************************************************************************************************************************************************************************************************************************************************************************************/
+@import url(https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Cormorant+Infant:wght@300&family=Dancing+Script:wght@500;700&family=Italiana&family=Playfair+Display&display=swap);
+/*!*************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/string-replace-loader/index.js??ruleSet[1].rules[2].use[2]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[2].use[3]!./node_modules/sass-loader/dist/cjs.js!./src/styles/styles.scss (1) ***!
+  \*************************************************************************************************************************************************************************************************************************************************************************************************/
+@import url(https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Cormorant+Infant:wght@300&family=Dancing+Script:wght@500;700&family=Italiana&family=Playfair+Display&display=swap);
+/*!*************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/string-replace-loader/index.js??ruleSet[1].rules[2].use[2]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[2].use[3]!./node_modules/sass-loader/dist/cjs.js!./src/styles/styles.scss (2) ***!
+  \*************************************************************************************************************************************************************************************************************************************************************************************************/
+@import url(https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Cormorant+Infant:wght@300&family=Dancing+Script:wght@500;700&family=Italiana&family=Playfair+Display&display=swap);
+/*!*************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/string-replace-loader/index.js??ruleSet[1].rules[2].use[2]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[2].use[3]!./node_modules/sass-loader/dist/cjs.js!./src/styles/styles.scss (3) ***!
+  \*************************************************************************************************************************************************************************************************************************************************************************************************/
+@import url(https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Cormorant+Infant:wght@300&family=Dancing+Script:wght@500;700&family=Italiana&family=Playfair+Display&display=swap);
+/*!*************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/string-replace-loader/index.js??ruleSet[1].rules[2].use[2]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[2].use[3]!./node_modules/sass-loader/dist/cjs.js!./src/styles/styles.scss (4) ***!
+  \*************************************************************************************************************************************************************************************************************************************************************************************************/
+@import url(https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Cormorant+Infant:wght@300&family=Dancing+Script:wght@500;700&family=Italiana&family=Playfair+Display&display=swap);
+/*!*************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/string-replace-loader/index.js??ruleSet[1].rules[2].use[2]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[2].use[3]!./node_modules/sass-loader/dist/cjs.js!./src/styles/styles.scss (5) ***!
+  \*************************************************************************************************************************************************************************************************************************************************************************************************/
+/* 
+  Fonts
+ */
+/* Alex Custom Colors */
+/* Possible Pattern */
+/* Not liking this WhiteTri one... */
+/* 
+
+  Colors
+
+ */
+html {
+  height: 100%;
+  box-sizing: border-box;
+  font-size: 100%; }
+
+*, *:before, *:after {
+  box-sizing: inherit; }
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow-x: hidden;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  color: #3b3b3b; }
+
+h1, h2, h3, h4, h5 {
+  margin: 6px;
+  padding: 0; }
+
+/* 
+  Fonts
+ */
+/* Alex Custom Colors */
+/* Possible Pattern */
+/* Not liking this WhiteTri one... */
+/* 
+
+  Colors
+
+ */
+.titleOuterContainer.bodyContainerItem {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden; }
+
+.titleImage {
+  /*   background: url(assets/)assets/images/engage/highlight/52.jpg'); */
+  background: url(../../assets/images/2.jpg);
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-position: center;
+  filter: grayscale(50%); }
+
+/* This is a place holder for the Logo */
+.titleName {
+  background: url(../../assets/images/initials-white-trans.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 3;
+  height: 200px;
+  width: 400px; }
+
+/* 
+  Fonts
+ */
+/* Alex Custom Colors */
+/* Possible Pattern */
+/* Not liking this WhiteTri one... */
+/* 
+
+  Colors
+
+ */
+.navbar {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  display: grid;
+  grid-template-areas: 'logo links';
+  z-index: 10;
+  transition: all ease 0.3s;
+  background: #efdacd24; }
+
+.navlogo {
+  background: url(../../assets/images/initials-white-trans.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-left: 2rem;
+  height: 90px;
+  width: 120px;
+  grid-area: logo; }
+  .navbar.on-scroll .navlogo {
+    height: 75px; }
+
+.navbarcontainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 100%;
+  grid-area: links;
+  font-family: "Cormorant Infant", serif;
+  font-size: 2rem;
+  letter-spacing: 5px; }
+  .on-scroll .navbarcontainer {
+    height: 100%;
+    align-items: center; }
+
+.navlinkItem {
+  color: white;
+  text-decoration: none;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  transition: all ease 0.5s;
+  height: 100%;
+  display: flex;
+  align-items: center; }
+  .on-scroll .navlinkItem {
+    display: flex;
+    align-items: center;
+    height: 100%; }
+  .navlinkItem:hover {
+    /*     background: #e2c2af47;
+ */
+    background: linear-gradient(to right, rgba(226, 194, 175, 0) 0%, rgba(226, 194, 175, 0.2) 50%, rgba(226, 194, 175, 0) 100%); }
+
+/* On scroll events */
+.on-scroll {
+  position: fixed;
+  width: 100vw;
+  left: 0;
+  align-items: center;
+  justify-content: space-evenly;
+  box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.5); }
+
+/* 
+  Fonts
+ */
+/* Alex Custom Colors */
+/* Possible Pattern */
+/* Not liking this WhiteTri one... */
+/* 
+
+  Colors
+
+ */
+.venueContainer.bodyContainerItem {
+  height: 100vh;
+  flex-direction: row;
+  justify-content: end;
+  align-items: center;
+  background: #927c68;
+  display: flex;
+  padding-top: 5rem; }
+
+.venue-bg {
+  width: 33%;
+  height: 85%;
+  margin: 1rem;
+  margin-left: 10rem;
+  margin-right: 4rem;
+  background: url("data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 height=%27100%25%27 width=%27100%25%27%3E%3Cdefs%3E%3Cpattern id=%27doodad%27 width=%2713%27 height=%2713%27 viewBox=%270 0 40 40%27 patternUnits=%27userSpaceOnUse%27 patternTransform=%27rotate%2890%29%27%3E%3Crect width=%27100%25%27 height=%27100%25%27 fill=%27rgba%28225, 231, 239,0.12%29%27/%3E%3Cpath d=%27M-0.5 20v20h1v-20zM39.5 20v20h1v-20z%27 fill=%27rgba%2826, 33, 45,0.12%29%27/%3E%3Cpath d=%27M-10 29.5 h60 v1 h-60z%27 fill=%27rgba%2845, 55, 72,0.12%29%27/%3E%3Cpath d=%27M19.5 0v40h1v-40z%27 fill=%27rgba%2826, 33, 45,0.12%29%27/%3E%3Cpath d=%27M-10 9.5h60v1h-60z%27 fill=%27rgba%2845, 55, 72,0.12%29%27/%3E%3Cpath d=%27M-0.5 0v20h1v-20zM39.5 0v20h1v-20z%27 fill=%27rgba%2826, 33, 45,0.12%29%27/%3E%3C/pattern%3E%3C/defs%3E%3Crect fill=%27url%28%23doodad%29%27 height=%27200%25%27 width=%27200%25%27/%3E%3C/svg%3E"), url(../../assets/images/sofitel-4.jpeg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  filter: grayscale(60%); }
+
+.venue-text {
+  border: 1px solid black;
+  width: 50%;
+  height: 85%;
+  text-align: center;
+  padding: 1rem 9rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center; }
+
+.venue-text-header {
+  font-size: 2.5rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center; }
+  .venue-text-header::after {
+    display: flex;
+    content: ' ';
+    border: 1px solid black;
+    width: 60%;
+    justify-self: center;
+    margin: 0.5rem 0; }
+
+.venue-blurb {
+  font-size: 1.5rem; }
+
+/* 
+  Fonts
+ */
+/* Alex Custom Colors */
+/* Possible Pattern */
+/* Not liking this WhiteTri one... */
+/* 
+
+  Colors
+
+ */
+body {
+  background: url("data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 height=%27100%25%27 width=%27100%25%27%3E%3Cdefs%3E%3Cpattern id=%27doodad%27 width=%275%27 height=%275%27 viewBox=%270 0 40 40%27 patternUnits=%27userSpaceOnUse%27 patternTransform=%27rotate%28135%29%27%3E%3Crect width=%27100%25%27 height=%27100%25%27 fill=%27rgba%2826, 32, 44,1%29%27/%3E%3Cpath d=%27M0 40a 9-9 0 0 0 9-9a 11-11 0 0 1 11-11a 9-9 0 0 0 9-9a 11-11 0 0 1 11-11v2a-9 9 0 0 0-9 9a-11 11 0 0 1-11 11a-9 9 0 0 0-9 9a-11 11 0 0 1-11 11zM0 0a 9-9 0 0 0 9-9h2a-11 11 0 0 1-11 11z%27 fill=%27rgba%2842, 67, 101,1%29%27/%3E%3Cpath d=%27M12 0a 11.5 11.5 0 0 1 11.5 11.5a 8.5 8.5 0 0 0 8.5 8.5a 11.5 11.5 0 0 1 11.5 11.5a 8.5 8.5 0 0 0 8.5 8.5a 11.5 11.5 0 0 1 11.5 11.5a 8.5 8.5 0 0 1 8.5 8.5v3a-11.5-11.5 0 0 1-11.5-11.5a-8.5-8.5 0 0 0-8.5-8.5a-11.5-11.5 0 0 1-11.5-11.5a-8.5-8.5 0 0 0-8.5-8.5a-11.5-11.5 0 0 1-11.5-11.5a-8.5-8.5 0 0 0-8.5-8.5a-11.5-11.5 0 0 1-11.5-11.5a-8.5-8.5 0 0 1-8.5-8.5a-11.5-11.5 0 0 0-11.5-11.5h2a 8.5 8.5 0 0 1 8.5 8.5a 8.5 8.5 0 0 0 8.5 8.5zM-28 0a 11.5 11.5 0 0 1 11.5 11.5a 8.5 8.5 0 0 0 8.5 8.5a 11.5 11.5 0 0 1 11.5 11.5a 8.5 8.5 0 0 0 8.5 8.5a 11.5 11.5 0 0 1 11.5 11.5a 8.5 8.5 0 0 1 8.5 8.5v3a-11.5-11.5 0 0 1-11.5-11.5a-8.5-8.5 0 0 0-8.5-8.5a-11.5-11.5 0 0 1-11.5-11.5a-8.5-8.5 0 0 0-8.5-8.5a-11.5-11.5 0 0 1-11.5-11.5a-8.5-8.5 0 0 0-8.5-8.5a-11.5-11.5 0 0 1-11.5-11.5h2a 8.5 8.5 0 0 0 8.5 8.5zM52 0a 11.5 11.5 0 0 1 11.5 11.5h-3a-8.5-8.5 0 0 1-8.5-8.5a-11.5-11.5 0 0 1-11.5-11.5a-8.5-8.5 0 0 1-8.5-8.5a-11.5-11.5 0 0 1-11.5-11.5z%27 fill=%27rgba%28116, 66, 16,1%29%27/%3E%3C/pattern%3E%3C/defs%3E%3Crect fill=%27url%28%23doodad%29%27 height=%27200%25%27 width=%27200%25%27/%3E%3C/svg%3E");
+  display: flex;
+  justify-content: center; }
+
+.bodyContain {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: max-content;
+  box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.5);
+  position: relative; }
+
+.bodyContainerItem {
+  transition: all ease 0.3s;
+  background: transparent;
+  height: 100vh; }
+
