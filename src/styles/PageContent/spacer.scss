@@ -1,0 +1,63 @@
+@import '../settings.scss';
+
+.spacer.bodyContainerItem {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.spacerImage {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  filter: grayscale(50%);
+}
+
+.spacerName {
+  position: relative; 
+  z-index:3;
+  height: 200px;
+  width: 400px;
+  font-size: 3rem;
+  color: white;
+  font-family: $displayFont;
+  text-transform: uppercase;
+}
+
+
+/* INTRO SECTION -- INTRO CONTEXT */
+
+.spacer_Intro {
+  .spacerImage {
+    background-size: cover;
+  }
+
+  .spacerName {
+     background: url('../../public/assets/images/Icons/initials-white-trans.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+   
+  }
+}
+
+
+/* TRAVEL -- CARTAGENA CONTEXT */
+
+.spacer_Cartagena {
+  .spacerName {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      font-weight: bold;
+      font-size: 5rem;
+      display: flex;
+      align-items: center;
+  }
+}

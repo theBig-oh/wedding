@@ -21,6 +21,10 @@
 /*!*************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/string-replace-loader/index.js??ruleSet[1].rules[2].use[2]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[2].use[3]!./node_modules/sass-loader/dist/cjs.js!./src/styles/styles.scss (5) ***!
   \*************************************************************************************************************************************************************************************************************************************************************************************************/
+@import url(https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Cormorant+Infant:wght@300&family=Dancing+Script:wght@500;700&family=Italiana&family=Playfair+Display&display=swap);
+/*!*************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/string-replace-loader/index.js??ruleSet[1].rules[2].use[2]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[2].use[3]!./node_modules/sass-loader/dist/cjs.js!./src/styles/styles.scss (6) ***!
+  \*************************************************************************************************************************************************************************************************************************************************************************************************/
 /* 
   Fonts
  */
@@ -61,6 +65,11 @@ h1, h2, h3, h4, h5 {
 /* 
 
   Colors
+
+ */
+/* 
+  NOT NEEDED ANYMORE SINCE THIS HAS BEEN MIGRATED INTO THE
+  "SPACER" COMPONENT
 
  */
 .titleOuterContainer.bodyContainerItem {
@@ -120,8 +129,8 @@ h1, h2, h3, h4, h5 {
   background-repeat: no-repeat;
   background-position: center;
   margin-left: 2rem;
-  height: 90px;
-  width: 120px;
+  height: 50px;
+  width: 70px;
   grid-area: logo; }
   .navbar.on-scroll .navlogo {
     height: 75px; }
@@ -225,6 +234,64 @@ h1, h2, h3, h4, h5 {
 
 .venue-blurb {
   font-size: 1.5rem; }
+
+/* 
+  Fonts
+ */
+/* Alex Custom Colors */
+/* Possible Pattern */
+/* Not liking this WhiteTri one... */
+/* 
+
+  Colors
+
+ */
+.spacer.bodyContainerItem {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden; }
+
+.spacerImage {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  filter: grayscale(50%); }
+
+.spacerName {
+  position: relative;
+  z-index: 3;
+  height: 200px;
+  width: 400px;
+  font-size: 3rem;
+  color: white;
+  font-family: "Cormorant Infant", serif;
+  text-transform: uppercase; }
+
+/* INTRO SECTION -- INTRO CONTEXT */
+.spacer_Intro .spacerImage {
+  background-size: cover; }
+
+.spacer_Intro .spacerName {
+  background: url(../../assets/images/initials-white-trans.png);
+  background-size: contain;
+  background-repeat: no-repeat; }
+
+/* TRAVEL -- CARTAGENA CONTEXT */
+.spacer_Cartagena .spacerName {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-weight: bold;
+  font-size: 5rem;
+  display: flex;
+  align-items: center; }
 
 /* 
   Fonts
