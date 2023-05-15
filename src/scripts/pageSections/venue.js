@@ -21,7 +21,7 @@ const Venues = function(venue) {
   venueTextHeader.innerHTML = `<div> The Venue </div>`;
 
 
-  venueBlurb.innerHTML = venue[0].blurb;
+  venueBlurb.innerHTML = venue[0].venueBlurb;
 
 
   venueText.append(venueTextHeader, venueBlurb);
