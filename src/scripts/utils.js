@@ -34,9 +34,15 @@ export function MakeElement(){
       classStuff.push(custom);
     }
     
-   if(gridsize == null){
-      console.log('No bootstrap classes added');
-    } else {
+  /* 
+    Gridsize needs to be depreciated or removed completely
+     No one uses bootstrap anymore. 
+
+     Maybe able to salvage it for another type of class?
+
+  */
+
+   if(gridsize != null){
       gridsize.forEach(function(siz,i){
         let multiSize = ['xs','sm','md','lg'];
         if(parseInt(siz) == 0) {

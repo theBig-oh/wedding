@@ -2,13 +2,12 @@ import { MakeElement } from '../utils';
 
 
 
-const TravelInfo = function(venue) {
+const TravelInfo = function(location) {
 
   const makeEle = new MakeElement;
 
   console.log('this is the venue');
 
-  console.log(venue);
 
   const TravelContainer = makeEle.createEle('div','Travels',null,['TravelContainer','bodyContainerItem'])
   const TravelMainBg = makeEle.createEle('div','Travel-BG', null, ['TravelContainerItem','Travel-bg']);

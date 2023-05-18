@@ -1,0 +1,12 @@
+@import '../settings';
+
+.TravelContainer.bodyContainerItem {
+  height: 100vh;
+  flex-direction: row;
+  justify-content: end;
+  align-items:center;
+  background: #927c68;
+  display: flex;
+  padding-top: 5rem;
+
+}
