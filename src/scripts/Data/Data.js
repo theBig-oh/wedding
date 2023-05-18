@@ -27,7 +27,7 @@ var data = {
   				<p>Join us in colorful and vibrant Cartagena, Colombia, a stunning destination for our wedding celebration.</p>
   				<p>Explore the historic old town, enjoy the delicious food and drinks, and soak up the Caribbean sun on the beach.</p>
   				<p>We can't wait to share this unforgettable experience with you!</p>
-			</div>`,
+			</div>`
 	},
 	/* Hotels And Venue */
   	"location": [
@@ -36,30 +36,49 @@ var data = {
 			"link": "",
 			"address": "",
 			"map": "",
-			"blurb": `<div>
+			"venueBlurb": `<div>
        			 <h3>Our Wedding in Cartagena, Colombia</h3>
         			<p>Our wedding will be held at the <br></br><strong>Sofitel Hotel in Cartagena, Colombia</strong><br/><br/> A stunning venue located in the heart of the historic walled city.</p>
         	<p>With its elegant decor and amazing views, it's the perfect place for our dream wedding.</p>
         	<p>The hotel's event planning team is here to help us with everything, so we can relax and enjoy our special day.</p>
         	<p>Can't wait to celebrate with you there!</p>
       		</div>`,
-			"isVenue": true 
+      		"blurb": "Stay in luxury at Sofitel Santa Clara, a beautifully restored 17th-century convent in the heart of Cartagena's historic district. This hotel offers elegantly appointed rooms and suites, an on-site spa, and a stunning outdoor pool, as well as a restaurant serving delicious cuisine in a beautiful courtyard setting. With its prime location and excellent service, Sofitel Santa Clara is the perfect place to stay for a luxurious and unforgettable visit to Cartagena.",
+			"isVenue": true,
+			"priceRange": "$$$$",
+			"images": [
+				"'../../public/assets/images/location/venue/sofitel-2.jpeg'",
+				"'../../public/assets/images/location/venue/sofitel-3.jpeg'",
+				"'../../public/assets/images/location/venue/sofitel-4.jpeg'"
+				] 
 		},
 		{
-			"name": "Sofiatel Santa Clara",
-			"link": "",
+			"name": "Hotel Delirio",
+			"link": "https://www.deliriohotel.co/",
 			"address": "",
 			"map": "",
-			"blurb": "",
-			"isVenue": false
+			"blurb": "Discover the ultimate in luxury and style at Hotel Delirio, a boutique hotel located in the heart of Cartagena's historic district. Enjoy beautifully designed rooms, a rooftop terrace with a pool, and top-notch amenities like Egyptian cotton sheets and plush bathrobes. The friendly and attentive hotel staff is ready to help you with anything you need during your stay, making Hotel Delirio the perfect choice for a memorable and luxurious visit to Cartagena.",
+			"isVenue": false,
+			"priceRange": "$$",
+			"images": [
+				"../../public/assets/image/location/hotels/delirio-1.jpg",
+				"../../public/assets/image/location/hotels/delirio-2.jpg",
+				"../../public/assets/image/location/hotels/delirio-3.jpg"
+				]
 		},
 		{
-			"name": "Sofiatel Santa Clara",
-			"link": "",
+			"name": "Hotel Bantu",
+			"link": "https://www.radissonhotelsamericas.com/en-us/hotels/radisson-individuals-bantu?cid=a:se+b:gmb+c:amer+i:localrs+e:rad+d:us&mc=llgoxxpx",
 			"address": "",
 			"map": "",
-			"blurb": "",
-			"isVenue": false 
+			"blurb": "Stay in the heart of Cartagena's historic district at Hotel Bantu, a charming hotel with comfortable rooms and great amenities. Located just steps away from the best restaurants, shops, and attractions, Hotel Bantu offers stylish and well-equipped rooms, a beautiful courtyard with a pool, and excellent service and hospitality. Whether you're traveling with your significant other, friends, or family, Hotel Bantu has the perfect room for you, and the hotel staff will be happy to assist you with anything you need during your stay. Book your room today and enjoy the best of Cartagena!",
+			"isVenue": false,
+			"priceRange": "$$",
+			"images": [
+				"../../public/assets/image/location/hotels/bantu-1.jpg",
+				"../../public/assets/image/location/hotels/bantu-2.jpg",
+				"../../public/assets/image/location/hotels/bantu-3.jpg"
+				]
 		}
 	]
 }

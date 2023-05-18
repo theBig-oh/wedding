@@ -193,7 +193,7 @@ h1, h2, h3, h4, h5 {
 .venueContainer.bodyContainerItem {
   height: 100vh;
   flex-direction: row;
-  justify-content: end;
+  justify-content: center;
   align-items: center;
   background: #927c68;
   display: flex;
@@ -203,12 +203,16 @@ h1, h2, h3, h4, h5 {
   width: 33%;
   height: 85%;
   margin: 1rem;
+<<<<<<< HEAD
   margin-left: 10rem;
   margin-right: 4rem; }
 
 .venue-bg {
   width: 100%;
   height: 100%;
+=======
+  margin-right: 4rem;
+>>>>>>> d70cc089154665998d110434cfaab601fc17c7b3
   background-repeat: no-repeat;
   background-size: cover;
   filter: grayscale(60%); }
@@ -314,11 +318,91 @@ h1, h2, h3, h4, h5 {
 .TravelContainer.bodyContainerItem {
   height: 100vh;
   flex-direction: row;
+<<<<<<< HEAD
   justify-content: end;
   align-items: center;
   background: #927c68;
   display: flex;
   padding-top: 5rem; }
+=======
+  align-items: center;
+  background: #927c68;
+  display: flex; }
+
+.Travel-text {
+  height: 90%;
+  text-align: center;
+  padding: 1rem 9rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  font-family: "Cormorant Infant", serif; }
+
+.Travel-text-header {
+  font-size: 2.5rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center; }
+  .Travel-text-header::after {
+    display: flex;
+    content: ' ';
+    border: 1px solid #333;
+    width: 60%;
+    justify-self: center;
+    margin: 0.5rem 0; }
+
+.travelTextNav {
+  display: flex;
+  flex-direction: row;
+  font-size: 2rem;
+  justify-content: space-evenly; }
+  .travelTextNav .travelTextNavItem {
+    margin: 1rem;
+    border-bottom: 1px solid #333; }
+    .travelTextNav .travelTextNavItem:hover {
+      cursor: pointer;
+      border-bottom: 0; }
+
+.Travel-blurb {
+  font-size: 1.5rem;
+  height: 100%;
+  width: 100%; }
+
+.travelHotel {
+  display: flex;
+  justify-content: space-evenly;
+  height: 100%; }
+
+.hotelItem {
+  border: 1px solid #333;
+  height: 80%;
+  width: 30%;
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .hotelItem div {
+    margin-top: 1rem; }
+  .hotelItem .name {
+    font-size: 2rem;
+    text-transform: uppercase; }
+    .hotelItem .name:after {
+      content: " ";
+      display: block;
+      width: 50%;
+      border: 1px solid #333;
+      margin: 1rem auto 0; }
+  .hotelItem.hotelItem-0 {
+    order: 2; }
+  .hotelItem.hotelItem-1 {
+    order: 1; }
+  .hotelItem.hotelItem-2 {
+    order: 3; }
+>>>>>>> d70cc089154665998d110434cfaab601fc17c7b3
 
 /* 
   Fonts

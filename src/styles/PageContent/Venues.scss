@@ -4,7 +4,7 @@
 .venueContainer.bodyContainerItem {
   height: 100vh;
   flex-direction: row;
-  justify-content: end;
+  justify-content: center;
   align-items:center;
   background: #927c68;
   display: flex;
@@ -16,13 +16,15 @@
   width: 33%;
   height: 85%;
   margin: 1rem;
-  margin-left: 10rem;
   margin-right: 4rem;
+<<<<<<< HEAD
 }
 
 .venue-bg {
   width: 100%;
   height: 100%;
+=======
+>>>>>>> d70cc089154665998d110434cfaab601fc17c7b3
   background-repeat: no-repeat;
   background-size: cover;
   filter: grayscale(60%);
@@ -35,7 +37,7 @@
   width: 50%;
   height: 85%;
   text-align: center;
-  padding:1rem 9rem;
+  padding: 1rem 9rem;
   display: flex;
   align-items: center;
   flex-direction: column;

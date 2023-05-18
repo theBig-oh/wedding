@@ -33,8 +33,12 @@ const Venues = function(venue) {
   venueTextHeader.innerHTML = `<div> The Venue </div>`;
 
 
+<<<<<<< HEAD
 
   venueBlurb.innerHTML = venue[0].blurb;
+=======
+  venueBlurb.innerHTML = venue[0].venueBlurb;
+>>>>>>> d70cc089154665998d110434cfaab601fc17c7b3
 
 
   venueText.append(venueTextHeader, venueBlurb);

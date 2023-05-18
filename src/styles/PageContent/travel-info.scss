@@ -1,0 +1,114 @@
+@import '../settings.scss';
+
+
+.TravelContainer.bodyContainerItem {
+  height: 100vh;
+  flex-direction: row;
+  align-items:center;
+  background: #927c68;
+  display: flex;
+}
+
+.Travel-text {
+// Might leave the border. 
+  height: 90%;
+  text-align: center;
+  padding:1rem 9rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+
+  font-family: $displayFont;
+}
+
+.Travel-text-header {
+  font-size: 2.5rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+  &::after {
+    display: flex;
+    content: ' ';
+    border: 1px solid #333;
+    width: 60%;
+    justify-self: center;
+    margin: 0.5rem 0;
+  }
+}
+
+.travelTextNav {
+  display: flex;
+  flex-direction: row;
+  font-size: 2rem;
+  justify-content: space-evenly;
+
+  .travelTextNavItem {
+    margin: 1rem;
+    border-bottom: 1px solid #333;
+
+    &:hover {
+      cursor: pointer;
+      border-bottom: 0;
+    }
+  }
+}
+
+
+
+.Travel-blurb {
+  font-size: 1.5rem;
+  height: 100%;
+  width: 100%;
+}
+
+
+.travelHotel {
+  display: flex;
+  justify-content: space-evenly;
+  height: 100%;
+
+}
+
+.hotelItem {
+  border: 1px solid #333;
+  height: 80%;
+  width: 30%;
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction:  column;
+  align-items: center;
+
+  div {
+    margin-top: 1rem;
+  }
+
+  .name {
+    font-size: 2rem;
+    text-transform: uppercase;
+
+    &:after {
+      content: " ";
+      display: block;
+      width: 50%;
+      border: 1px solid #333;
+      margin: 1rem auto 0;
+    }
+  }
+
+  &.hotelItem-0 {
+    order: 2;
+  }
+
+  &.hotelItem-1 {
+    order: 1;
+  }
+
+  &.hotelItem-2 {
+    order: 3;
+  }
+}
