@@ -1,0 +1,67 @@
+@import '../settings.scss';
+
+.registery-page.text-page {
+  flex-direction: column;
+  align-items:start;
+  background: #927c68;
+  display: flex;
+  padding-top: 5rem;
+  height: 850px;
+}
+
+.register-wrapper {
+	  height: 90%;
+  text-align: center;
+  padding:1rem 9rem;
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  width: 100%;
+}
+
+.register-body-wrapper {
+	width: 100%;
+	display: flex;
+}
+
+.registerTitle {
+	  font-size: 2.5rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  align-items: start;
+
+  &::after {
+    display: flex;
+    content: ' ';
+    border: 1px solid #333;
+    width: 120px;
+    justify-self: center;
+    margin: 0.5rem 0;
+  }
+}
+
+.registerPageText {
+	width: 40%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    padding: 1rem;
+    font-size: 1.5rem;
+    text-align: left;
+    margin-top: 1rem;
+}
+
+.registerPageItem {
+	width: 60%;
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+
+	.regItemContain {
+		border: 1px solid black;
+		width: 40%;
+	}
+}

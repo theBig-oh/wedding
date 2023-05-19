@@ -29,6 +29,14 @@
 /*!*************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/string-replace-loader/index.js??ruleSet[1].rules[2].use[2]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[2].use[3]!./node_modules/sass-loader/dist/cjs.js!./src/styles/styles.scss (7) ***!
   \*************************************************************************************************************************************************************************************************************************************************************************************************/
+@import url(https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Cormorant+Infant:wght@300&family=Dancing+Script:wght@500;700&family=Italiana&family=Playfair+Display&display=swap);
+/*!*************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/string-replace-loader/index.js??ruleSet[1].rules[2].use[2]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[2].use[3]!./node_modules/sass-loader/dist/cjs.js!./src/styles/styles.scss (8) ***!
+  \*************************************************************************************************************************************************************************************************************************************************************************************************/
+@import url(https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Cormorant+Infant:wght@300&family=Dancing+Script:wght@500;700&family=Italiana&family=Playfair+Display&display=swap);
+/*!*************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/string-replace-loader/index.js??ruleSet[1].rules[2].use[2]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[2].use[3]!./node_modules/sass-loader/dist/cjs.js!./src/styles/styles.scss (9) ***!
+  \*************************************************************************************************************************************************************************************************************************************************************************************************/
 /* 
   Fonts
  */
@@ -203,16 +211,11 @@ h1, h2, h3, h4, h5 {
   width: 33%;
   height: 85%;
   margin: 1rem;
-<<<<<<< HEAD
-  margin-left: 10rem;
   margin-right: 4rem; }
 
 .venue-bg {
   width: 100%;
   height: 100%;
-=======
-  margin-right: 4rem;
->>>>>>> d70cc089154665998d110434cfaab601fc17c7b3
   background-repeat: no-repeat;
   background-size: cover;
   filter: grayscale(60%); }
@@ -284,6 +287,14 @@ h1, h2, h3, h4, h5 {
   color: white;
   font-family: "Cormorant Infant", serif;
   text-transform: uppercase; }
+  .spacer:not(.spacer_Intro) .spacerName {
+    position: absolute;
+    left: 40px;
+    bottom: 0;
+    font-weight: bold;
+    font-size: 5rem;
+    display: flex;
+    align-items: center; }
 
 /* INTRO SECTION -- INTRO CONTEXT */
 .spacer_Intro .spacerImage {
@@ -294,16 +305,31 @@ h1, h2, h3, h4, h5 {
   background-size: contain;
   background-repeat: no-repeat; }
 
-/* TRAVEL -- CARTAGENA CONTEXT */
-.spacer_Cartagena .spacerName {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  font-weight: bold;
-  font-size: 5rem;
-  display: flex;
-  align-items: center; }
+/* TRAVEL -- CARTAGENA CONTEXT 
 
+  Keeping this just to save time in writing it in case I need it.
+
+*/
+/* 
+.spacer_Travel {
+  .spacerName {
+ 
+    
+  }
+}
+
+.spacer_Registry {
+  .spacerName {
+     
+  }
+}
+
+.spacer_FAQ {
+  .spacerName {
+
+  }
+}
+ */
 /* 
   Fonts
  */
@@ -316,37 +342,30 @@ h1, h2, h3, h4, h5 {
 
  */
 .TravelContainer.bodyContainerItem {
-  height: 100vh;
   flex-direction: row;
-<<<<<<< HEAD
-  justify-content: end;
-  align-items: center;
-  background: #927c68;
-  display: flex;
-  padding-top: 5rem; }
-=======
   align-items: center;
   background: #927c68;
   display: flex; }
+  @media all and (min-width: 900px) {
+    .TravelContainer.bodyContainerItem {
+      height: 900px; } }
 
 .Travel-text {
   height: 90%;
   text-align: center;
   padding: 1rem 9rem;
   display: flex;
-  align-items: center;
+  align-items: start;
   flex-direction: column;
   justify-content: center;
-  width: 100%;
-  font-family: "Cormorant Infant", serif; }
+  width: 100%; }
 
 .Travel-text-header {
   font-size: 2.5rem;
   font-weight: bold;
   display: flex;
   justify-content: center;
-  flex-direction: column;
-  align-items: center; }
+  flex-direction: column; }
   .Travel-text-header::after {
     display: flex;
     content: ' ';
@@ -359,50 +378,269 @@ h1, h2, h3, h4, h5 {
   display: flex;
   flex-direction: row;
   font-size: 2rem;
-  justify-content: space-evenly; }
+  justify-content: space-evenly;
+  transition: all ease 0.25s;
+  font-family: "Cormorant Infant", serif; }
   .travelTextNav .travelTextNavItem {
-    margin: 1rem;
-    border-bottom: 1px solid #333; }
+    margin: 1rem 1rem 1rem 0;
+    border-bottom: 1px solid #333;
+    transition: all ease 0.23s; }
+    .travelTextNav .travelTextNavItem.is-active {
+      font-size: 2.25rem;
+      font-weight: bold;
+      text-shadow: 0 0 #333; }
     .travelTextNav .travelTextNavItem:hover {
       cursor: pointer;
-      border-bottom: 0; }
+      font-size: 2.25rem;
+      text-shadow: 0 0 #333; }
 
 .Travel-blurb {
   font-size: 1.5rem;
   height: 100%;
   width: 100%; }
 
+.travelBlurbItem {
+  opacity: 0;
+  display: none;
+  transform: all ease 0.5s; }
+  .travelBlurbItem.is-active {
+    display: flex;
+    opacity: 1; }
+
+.travelDirections {
+  height: 100%;
+  text-align: left; }
+  .travelDirections .directions-wrapper {
+    display: flex;
+    flex-direction: row; }
+    .travelDirections .directions-wrapper .directions-texts-wrapper {
+      width: 40%;
+      display: flex;
+      flex-direction: column;
+      border: 1px solid black;
+      padding: 1rem; }
+
 .travelHotel {
-  display: flex;
   justify-content: space-evenly;
-  height: 100%; }
+  height: 100%;
+  align-items: center;
+  text-align: justify; }
 
 .hotelItem {
   border: 1px solid #333;
   height: 80%;
   width: 30%;
-  padding: 1rem 2rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
-  .hotelItem div {
-    margin-top: 1rem; }
+  display: grid;
+  align-items: center;
+  justify-content: center; }
+  .hotelItem .wrapper {
+    padding: 1rem 2rem; }
   .hotelItem .name {
     font-size: 2rem;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    font-weight: bold; }
     .hotelItem .name:after {
       content: " ";
       display: block;
       width: 50%;
       border: 1px solid #333;
-      margin: 1rem auto 0; }
+      margin: 1rem 0 0.5rem 0; }
+  .hotelItem .price {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    font-weight: bold; }
+  .hotelItem .blurb {
+    font-size: 1.3rem; }
   .hotelItem.hotelItem-0 {
-    order: 2; }
+    order: 2;
+    height: 90%; }
   .hotelItem.hotelItem-1 {
     order: 1; }
   .hotelItem.hotelItem-2 {
     order: 3; }
->>>>>>> d70cc089154665998d110434cfaab601fc17c7b3
+
+.hotelImage {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-self: end;
+  border-top: 5px solid #333;
+  overflow: hidden; }
+  .hotelImage .hotelImg {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    filter: grayscale(60%);
+    transition: all ease 0.3s; }
+    .hotelImage .hotelImg:hover {
+      cursor: pointer;
+      transform: scale(1.25);
+      z-index: 3;
+      filter: grayscale(30%); }
+      .hotelImage .hotelImg:hover:first-child {
+        box-shadow: 6px 0px 2px -1px rgba(0, 0, 0, 0.53); }
+      .hotelImage .hotelImg:hover:nth-child(2) {
+        box-shadow: -6px 0px 2px -1px rgba(0, 0, 0, 0.53), 6px 0px 2px -1px rgba(0, 0, 0, 0.53); }
+    .hotelImage .hotelImg:last-child, .hotelImage .hotelImg:nth-child(2) {
+      border-right: 2px;
+      box-shadow: -6px 0px 2px -1px rgba(0, 0, 0, 0.53); }
+  .hotelItem-0 .hotelImage {
+    height: 150px; }
+
+.displayModalContainer {
+  border: 5px solid black;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.75);
+  position: fixed;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3%;
+  width: 100%; }
+  .displayModalContainer:hover {
+    cursor: pointer; }
+  .displayModalContainer .displayModalPicture {
+    cursor: default !important;
+    box-shadow: 37px 37px 24px 4px rgba(0, 0, 0, 0.5);
+    border: 3px solid #5551;
+    border-radius: 10px;
+    padding: 0;
+    max-height: 500px;
+    max-width: 1000px; }
+
+/* 
+  Fonts
+ */
+/* Alex Custom Colors */
+/* Possible Pattern */
+/* Not liking this WhiteTri one... */
+/* 
+
+  Colors
+
+ */
+.registery-page.text-page {
+  flex-direction: column;
+  align-items: start;
+  background: #927c68;
+  display: flex;
+  padding-top: 5rem;
+  height: 850px; }
+
+.register-wrapper {
+  height: 90%;
+  text-align: center;
+  padding: 1rem 9rem;
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  width: 100%; }
+
+.register-body-wrapper {
+  width: 100%;
+  display: flex; }
+
+.registerTitle {
+  font-size: 2.5rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  align-items: start; }
+  .registerTitle::after {
+    display: flex;
+    content: ' ';
+    border: 1px solid #333;
+    width: 120px;
+    justify-self: center;
+    margin: 0.5rem 0; }
+
+.registerPageText {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  padding: 1rem;
+  font-size: 1.5rem;
+  text-align: left;
+  margin-top: 1rem; }
+
+.registerPageItem {
+  width: 60%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap; }
+  .registerPageItem .regItemContain {
+    border: 1px solid black;
+    width: 40%; }
+
+/* 
+  Fonts
+ */
+/* Alex Custom Colors */
+/* Possible Pattern */
+/* Not liking this WhiteTri one... */
+/* 
+
+  Colors
+
+ */
+.faq-page.text-page {
+  flex-direction: column;
+  align-items: start;
+  background: #927c68;
+  display: flex;
+  padding-top: 5rem;
+  height: 850px; }
+
+.faq-wrapper {
+  height: 90%;
+  text-align: center;
+  padding: 1rem 9rem;
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  width: 100%; }
+
+.faq-body-wrapper {
+  width: 100%;
+  display: flex; }
+
+.faqTitle {
+  font-size: 2.5rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  align-items: start; }
+  .faqTitle::after {
+    display: flex;
+    content: ' ';
+    border: 1px solid #333;
+    width: 120px;
+    justify-self: center;
+    margin: 0.5rem 0; }
+
+.faqPageText {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  padding: 1rem;
+  font-size: 1.5rem;
+  text-align: left;
+  margin-top: 1rem; }
+  .faqPageText a {
+    color: #ccc;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 0.25s ease; }
+    .faqPageText a:hover {
+      color: #aaa;
+      text-decoration: underline; }
 
 /* 
   Fonts
@@ -432,4 +670,10 @@ body {
   transition: all ease 0.3s;
   background: transparent;
   height: 100vh; }
+
+.text-page {
+  background: #927c68; }
+  @media all and (min-width: 920px) {
+    .text-page {
+      height: 1080px; } }
 

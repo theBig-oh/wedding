@@ -22,3 +22,12 @@ body {
   background: transparent;
   height: 100vh;
 }
+
+.text-page {
+    background: #927c68;
+
+
+    @media all and (min-width: 920px) {
+      height: 1080px;
+    }
+}

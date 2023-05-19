@@ -2,11 +2,15 @@
 
 
 .TravelContainer.bodyContainerItem {
-  height: 100vh;
   flex-direction: row;
   align-items:center;
   background: #927c68;
   display: flex;
+
+
+  @media all and (min-width: 900px) {
+    height: 900px;
+  }
 }
 
 .Travel-text {
@@ -15,12 +19,11 @@
   text-align: center;
   padding:1rem 9rem;
   display: flex;
-  align-items: center;
+  align-items: start;
   flex-direction: column;
   justify-content: center;
   width: 100%;
 
-  font-family: $displayFont;
 }
 
 .Travel-text-header {
@@ -29,7 +32,6 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-  align-items: center;
 
   &::after {
     display: flex;
@@ -46,14 +48,25 @@
   flex-direction: row;
   font-size: 2rem;
   justify-content: space-evenly;
+  transition: all ease 0.25s;
+
+  font-family: $displayFont;
 
   .travelTextNavItem {
-    margin: 1rem;
+    margin: 1rem 1rem 1rem 0;
     border-bottom: 1px solid #333;
+    transition: all ease 0.23s;
+
+    &.is-active {
+      font-size: 2.25rem;
+      font-weight: bold;
+      text-shadow: 0 0 #333;
+    }
 
     &:hover {
       cursor: pointer;
-      border-bottom: 0;
+      font-size: 2.25rem;
+      text-shadow: 0 0 #333;
     }
   }
 }
@@ -66,11 +79,42 @@
   width: 100%;
 }
 
+.travelBlurbItem {
+  opacity: 0;
+  display: none; 
+  transform: all ease 0.5s;
+
+  &.is-active { 
+    display: flex;
+    opacity: 1;
+  }
+}
+
+.travelDirections {
+  height: 100%;
+  text-align: left;
+
+  .directions-wrapper {
+    display: flex;
+    flex-direction: row;
+
+    .directions-texts-wrapper {
+      width: 40%;
+      display: flex;
+     flex-direction: column;
+     border: 1px solid black;
+     padding: 1rem;
+    }
+
+  }
+}
+
 
 .travelHotel {
-  display: flex;
   justify-content: space-evenly;
   height: 100%;
+  align-items: center;
+  text-align: justify;
 
 }
 
@@ -78,30 +122,42 @@
   border: 1px solid #333;
   height: 80%;
   width: 30%;
-  padding: 1rem 2rem;
-  display: flex;
-  flex-direction:  column;
-  align-items: center;
 
-  div {
-    margin-top: 1rem;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+
+  .wrapper {
+      padding: 1rem 2rem;
   }
 
   .name {
     font-size: 2rem;
     text-transform: uppercase;
+    font-weight: bold;
 
     &:after {
       content: " ";
       display: block;
       width: 50%;
       border: 1px solid #333;
-      margin: 1rem auto 0;
+      margin: 1rem 0 0.5rem 0;
     }
+  }
+
+  .price {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+  }
+
+  .blurb {
+    font-size: 1.3rem;
   }
 
   &.hotelItem-0 {
     order: 2;
+    height: 90%;
   }
 
   &.hotelItem-1 {
@@ -111,4 +167,77 @@
   &.hotelItem-2 {
     order: 3;
   }
+}
+
+.hotelImage {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-self: end;
+  border-top: 5px solid #333;
+  overflow: hidden;
+
+  .hotelImg {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    filter: grayscale(60%);
+      transition: all ease 0.3s;
+
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.25);
+      z-index: 3;
+      filter: grayscale(30%);
+
+      &:first-child {
+        box-shadow: 6px 0px 2px -1px rgba(0, 0, 0, 0.53);
+      }
+
+      &:nth-child(2) {
+        box-shadow: -6px 0px 2px -1px rgba(0, 0, 0, 0.53), 6px 0px 2px -1px rgba(0, 0, 0, 0.53);;
+      }
+
+    }
+
+    &:last-child, &:nth-child(2) {
+      border-right: 2px;
+      box-shadow: -6px 0px 2px -1px rgba(0, 0, 0, 0.53);
+    }
+   }
+
+  .hotelItem-0 & {
+    height: 150px;
+  }
+}
+
+
+.displayModalContainer {
+  border: 5px solid black;
+  height: 100vh;
+  background: rgba(0,0,0,0.75);
+  position: fixed;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3%;
+  width: 100%;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+
+  .displayModalPicture {
+    cursor: default !important;
+    box-shadow: 37px 37px 24px 4px rgba(0, 0, 0, 0.5);
+    border: 3px solid #5551;
+    border-radius: 10px;
+    padding: 0;
+    max-height: 500px;
+    max-width: 1000px;
+  }
+
+
 }

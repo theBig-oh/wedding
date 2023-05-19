@@ -59,3 +59,24 @@ export function MakeElement(){
     return newElement;
   }
 }
+
+
+
+export function displayModal(picture) {
+    let displayedModal = makeEle.createEle('div','displayModal', [12,12,12,12],'displayModalContainer');
+    let displayPicture = makeEle.createEle('img','displayPicture', [12,12,12,12],'displayModalPicture');
+    let pictureInfo = makeEle.createEle('div','picInfo',[12,12,12,12],'picInfo');
+
+    displayPicture.src = picture;
+    displayedModal.append(displayPicture);
+
+    document.querySelector('body').append(displayedModal);
+
+    displayedModal.addEventListener('click', (e) => {
+      if(e.target.classList.contains('displayModalContainer')) {
+        displayedModal.remove();
+      }
+    })
+
+    return displayedModal;
+  }

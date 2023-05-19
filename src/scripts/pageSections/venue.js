@@ -10,7 +10,7 @@ const Venues = function(venue) {
 
   console.log(venue);
 
-  const venueContainer = makeEle.createEle('div','Venues',null,['venueContainer','bodyContainerItem'])
+  const venueContainer = makeEle.createEle('div','Venues',null,['venueContainer','bodyContainerItem','text-page'])
   const venueMainBg = makeEle.createEle('div','Venue-BG', null, ['venueContainerItem','venue-bg']);
   const venueMainBgContainer = makeEle.createEle('div','Venue-BG-container', null, ['venueContainerItem','venue-bg-container']);
   
@@ -32,13 +32,7 @@ const Venues = function(venue) {
 
   venueTextHeader.innerHTML = `<div> The Venue </div>`;
 
-
-<<<<<<< HEAD
-
-  venueBlurb.innerHTML = venue[0].blurb;
-=======
   venueBlurb.innerHTML = venue[0].venueBlurb;
->>>>>>> d70cc089154665998d110434cfaab601fc17c7b3
 
 
   venueText.append(venueTextHeader, venueBlurb);

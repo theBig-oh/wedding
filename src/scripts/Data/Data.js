@@ -47,9 +47,9 @@ var data = {
 			"isVenue": true,
 			"priceRange": "$$$$",
 			"images": [
-				"'../../public/assets/images/location/venue/sofitel-2.jpeg'",
-				"'../../public/assets/images/location/venue/sofitel-3.jpeg'",
-				"'../../public/assets/images/location/venue/sofitel-4.jpeg'"
+				"../../public/assets/images/location/venue/sofitel-2.jpeg",
+				"../../public/assets/images/location/venue/sofitel-3.jpeg",
+				"../../public/assets/images/location/venue/sofitel-4.jpeg"
 				] 
 		},
 		{
@@ -61,9 +61,9 @@ var data = {
 			"isVenue": false,
 			"priceRange": "$$",
 			"images": [
-				"../../public/assets/image/location/hotels/delirio-1.jpg",
-				"../../public/assets/image/location/hotels/delirio-2.jpg",
-				"../../public/assets/image/location/hotels/delirio-3.jpg"
+				"../../public/assets/images/location/hotels/delirio-1.jpg",
+				"../../public/assets/images/location/hotels/delirio-2.jpg",
+				"../../public/assets/images/location/hotels/delirio-3.jpg"
 				]
 		},
 		{
@@ -71,16 +71,46 @@ var data = {
 			"link": "https://www.radissonhotelsamericas.com/en-us/hotels/radisson-individuals-bantu?cid=a:se+b:gmb+c:amer+i:localrs+e:rad+d:us&mc=llgoxxpx",
 			"address": "",
 			"map": "",
-			"blurb": "Stay in the heart of Cartagena's historic district at Hotel Bantu, a charming hotel with comfortable rooms and great amenities. Located just steps away from the best restaurants, shops, and attractions, Hotel Bantu offers stylish and well-equipped rooms, a beautiful courtyard with a pool, and excellent service and hospitality. Whether you're traveling with your significant other, friends, or family, Hotel Bantu has the perfect room for you, and the hotel staff will be happy to assist you with anything you need during your stay. Book your room today and enjoy the best of Cartagena!",
+			"blurb": "Stay in the heart of Cartagena's historic district at Hotel Bantu, a charming hotel with comfortable rooms and great amenities. Located just steps away from the best restaurants, shops, and attractions, Hotel Bantu offers stylish and well-equipped rooms, a beautiful courtyard with a pool, and excellent service and hospitality.",
 			"isVenue": false,
 			"priceRange": "$$",
 			"images": [
-				"../../public/assets/image/location/hotels/bantu-1.jpg",
-				"../../public/assets/image/location/hotels/bantu-2.jpg",
-				"../../public/assets/image/location/hotels/bantu-3.jpg"
+				"../../public/assets/images/location/hotels/bantu-1.jpg",
+				"../../public/assets/images/location/hotels/bantu-2.jpg",
+				"../../public/assets/images/location/hotels/bantu-3.jpg"
 				]
 		}
-	]
+	],
+	"registry": [
+			{
+				"name": "amazon",
+				"url": "",
+				"img": "",
+				"displayText": ""
+
+			},
+			{
+				"name": "amazon",
+				"url": "",
+				"img": "",
+				"displayText": ""
+
+			},
+			{
+				"name": "amazon",
+				"url": "",
+				"img": "",
+				"displayText": ""
+
+			},
+			{
+				"name": "venmo",
+				"url": "",
+				"img": "",
+				"displayText": ""
+
+			}
+		]
 }
 		 
 

@@ -29,6 +29,17 @@
   color: white;
   font-family: $displayFont;
   text-transform: uppercase;
+
+  .spacer:not(.spacer_Intro) & {
+    position: absolute;
+    left: 40px;
+    bottom: 0;
+    font-weight: bold;
+    font-size: 5rem;
+    display: flex;
+    align-items: center;
+
+  }
 }
 
 
@@ -48,16 +59,28 @@
 }
 
 
-/* TRAVEL -- CARTAGENA CONTEXT */
+/* TRAVEL -- CARTAGENA CONTEXT 
 
-.spacer_Cartagena {
+  Keeping this just to save time in writing it in case I need it.
+
+*/
+/* 
+.spacer_Travel {
   .spacerName {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      font-weight: bold;
-      font-size: 5rem;
-      display: flex;
-      align-items: center;
+ 
+    
   }
 }
+
+.spacer_Registry {
+  .spacerName {
+     
+  }
+}
+
+.spacer_FAQ {
+  .spacerName {
+
+  }
+}
+ */
