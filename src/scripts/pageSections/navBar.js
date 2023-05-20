@@ -9,10 +9,10 @@ const NavBar = function() {
 
     const pageLinks = {
         "links": [
-            {"name": "Venue", "link": "#venue"},
-            {"name": "Travel", "link": "#venue"},
-            {"name": "Registry", "link": "#venue"},
-            {"name": "FAQs", "link": "#venue"},
+            {"name": "Venue", "link": "#Venue"},
+            {"name": "Travel", "link": "#Travel"},
+            {"name": "Registry", "link": "#Registry"},
+            {"name": "FAQs", "link": "#FAQs"},
         ]
     }
 

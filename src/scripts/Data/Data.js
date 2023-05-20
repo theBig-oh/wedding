@@ -83,17 +83,17 @@ var data = {
 	],
 	"registry": [
 			{
-				"name": "amazon",
-				"url": "",
-				"img": "",
-				"displayText": ""
+				"name": "westElm",
+				"url": "https://www.westelm.com/registry/hz69pl8trf/registry-list.html",
+				"img": "../../public/assets/images/icons/west-elm-svg.png",
+				"displayText": "West Elm"
 
 			},
 			{
-				"name": "amazon",
-				"url": "",
-				"img": "",
-				"displayText": ""
+				"name": "bloomingdales",
+				"url": "https://www.bloomingdales.com/registry/wedding/guest/Alexandra-Grosso-Oscar_-Medrano/?registryId=7441687",
+				"img": "../../public/assets/images/icons/bloomingdales.jpeg",
+				"displayText": "Bloomingdales"
 
 			},
 			{

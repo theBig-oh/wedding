@@ -8,6 +8,8 @@
   align-items: center;
   position: relative;
   overflow: hidden;
+
+
 }
 
 .spacerImage {
@@ -17,7 +19,9 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  background-attachment: fixed;
   filter: grayscale(50%);
+  box-shadow: inset 0px 6px 14px 0px rgba(32, 32, 32, 0.54), inset 0px -10px 14px 0px rgba(32, 32, 32, 0.54);
 }
 
 .spacerName {

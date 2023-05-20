@@ -21,13 +21,19 @@ body {
   transition: all ease 0.3s;
   background: transparent;
   height: 100vh;
+  position: relative;
 }
 
 .text-page {
     background: #927c68;
 
-
     @media all and (min-width: 920px) {
       height: 1080px;
     }
+}
+
+
+.toc-marker {
+  position: absolute;
+  top: -200px;
 }

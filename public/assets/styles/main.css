@@ -276,7 +276,9 @@ h1, h2, h3, h4, h5 {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  filter: grayscale(50%); }
+  background-attachment: fixed;
+  filter: grayscale(50%);
+  box-shadow: inset 0px 6px 14px 0px rgba(32, 32, 32, 0.54), inset 0px -10px 14px 0px rgba(32, 32, 32, 0.54); }
 
 .spacerName {
   position: relative;
@@ -379,8 +381,7 @@ h1, h2, h3, h4, h5 {
   flex-direction: row;
   font-size: 2rem;
   justify-content: space-evenly;
-  transition: all ease 0.25s;
-  font-family: "Cormorant Infant", serif; }
+  transition: all ease 0.25s; }
   .travelTextNav .travelTextNavItem {
     margin: 1rem 1rem 1rem 0;
     border-bottom: 1px solid #333;
@@ -573,8 +574,13 @@ h1, h2, h3, h4, h5 {
   justify-content: space-evenly;
   flex-wrap: wrap; }
   .registerPageItem .regItemContain {
-    border: 1px solid black;
-    width: 40%; }
+    width: 40%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: all ease 0.25s; }
+    .registerPageItem .regItemContain:hover {
+      transform: scale(1.15); }
 
 /* 
   Fonts
@@ -669,11 +675,16 @@ body {
 .bodyContainerItem {
   transition: all ease 0.3s;
   background: transparent;
-  height: 100vh; }
+  height: 100vh;
+  position: relative; }
 
 .text-page {
   background: #927c68; }
   @media all and (min-width: 920px) {
     .text-page {
       height: 1080px; } }
+
+.toc-marker {
+  position: absolute;
+  top: -200px; }
 

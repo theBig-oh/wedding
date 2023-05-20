@@ -4,6 +4,8 @@ import { MakeElement } from '../utils';
 
 function RegisterPage(regItems) {
 
+   const tocMarker = makeEle.createEle('div','Registry', null, ['toc-marker','registry-toc-marker']);
+
     const registerContainer = makeEle.createEle('div', 'Registery-Page', null, ['bodyContainerItem','registery-page','text-page']);
 
     console.log(regItems);
@@ -25,7 +27,7 @@ function RegisterPage(regItems) {
     registerPageText.innerHTML = `
         <div class="text"> 
           <div class="register-text">
-              <p>Hey there, awesome guests! Wanna know where to find our wedding registry? We've got you covered!</p>
+              <p>Wanna know where to find our wedding registry? We've got you covered!</p>
           </div>
 
           <div class="register-text">
@@ -53,11 +55,11 @@ function RegisterPage(regItems) {
 
         regItemsContain.innerHTML = `
           <div class="name">
-              ${x.name}
           </div>
         `;
 
         regItemsContain.href = x.url;
+        regItemsContain.style.backgroundImage = "url("+x.img+ ")";
 
         registerItemsContainer.append(regItemsContain);
       })
@@ -67,7 +69,7 @@ function RegisterPage(regItems) {
 
     registerWrapper.append(registerPageTitle, registerBodyWrapper);
 
-    registerContainer.append(registerWrapper);
+    registerContainer.append(tocMarker,registerWrapper);
 
 
 

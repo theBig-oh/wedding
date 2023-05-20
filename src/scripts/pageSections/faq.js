@@ -4,6 +4,8 @@ import { MakeElement } from '../utils';
 
 function FaqPage() {
 
+   const tocMarker = makeEle.createEle('div','FAQs', null, ['toc-marker','faq-toc-marker']);
+
     const faqContainer = makeEle.createEle('div', 'faq-Page', null, ['bodyContainerItem','faq-page','text-page']);
 
     const faqWrapper = makeEle.createEle('div','faq-wrapper', null, ['faq-wrapper']);
@@ -34,7 +36,7 @@ function FaqPage() {
 
     faqWrapper.append(faqPageTitle, faqBodyWrapper);
 
-    faqContainer.append(faqWrapper);
+    faqContainer.append(tocMarker, faqWrapper);
 
 
 

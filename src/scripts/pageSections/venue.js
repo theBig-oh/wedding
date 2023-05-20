@@ -6,9 +6,7 @@ const Venues = function(venue) {
 
   const makeEle = new MakeElement;
 
-  console.log('this is the venue');
-
-  console.log(venue);
+   const tocMarker = makeEle.createEle('div','Venue', null, ['toc-marker','venue-toc-marker']);
 
   const venueContainer = makeEle.createEle('div','Venues',null,['venueContainer','bodyContainerItem','text-page'])
   const venueMainBg = makeEle.createEle('div','Venue-BG', null, ['venueContainerItem','venue-bg']);
@@ -38,7 +36,7 @@ const Venues = function(venue) {
   venueText.append(venueTextHeader, venueBlurb);
   venueMainBgContainer.append(venueMainBg);
 
-  venueContainer.append(venueMainBgContainer, venueText);
+  venueContainer.append(tocMarker, venueMainBgContainer, venueText);
 
 setTimeout(picChange(), 3000);
 
