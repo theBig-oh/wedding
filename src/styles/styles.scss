@@ -20,12 +20,23 @@ body {
 .bodyContainerItem {
   transition: all ease 0.3s;
   background: transparent;
-  height: 100vh;
   position: relative;
 }
 
 .text-page {
-    background: #927c68;
+  font-family: $textFont;
+
+  text-align: center;
+
+background-color: #927c68;
+background-image: url("https://www.transparenttextures.com/patterns/exclusive-paper.png");
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+    
+
+     p {
+      margin: 1rem auto 0rem auto;
+     }
+
 
     @media all and (min-width: 920px) {
       height: 1080px;
@@ -36,4 +47,9 @@ body {
 .toc-marker {
   position: absolute;
   top: -200px;
+
+
+  .venueContainer & {
+    top: -0px;
+  }
 }

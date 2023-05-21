@@ -4,9 +4,8 @@
 .TravelContainer.bodyContainerItem {
   flex-direction: row;
   align-items:center;
-  background: #927c68;
   display: flex;
-
+  font-family: $textFont;
 
   @media all and (min-width: 900px) {
     height: 900px;
@@ -17,12 +16,19 @@
 // Might leave the border. 
   height: 90%;
   text-align: center;
-  padding:1rem 9rem;
+  padding: 1rem;
   display: flex;
   align-items: start;
   flex-direction: column;
   justify-content: center;
   width: 100%;
+
+  @media all and (min-width: 500px) {
+    height: 90%;
+    padding: 1rem 9rem;
+
+  }
+
 
 }
 
@@ -46,9 +52,17 @@
 .travelTextNav {
   display: flex;
   flex-direction: row;
-  font-size: 2rem;
-  justify-content: space-evenly;
+  font-size: 1.3rem;
   transition: all ease 0.25s;
+  text-align: center;
+  margin: 0 auto;
+
+  @media all and (min-width: 500px) {
+    flex-direction: row;
+    justify-content: space-evenly;
+
+  }
+
 
   .travelTextNavItem {
     margin: 1rem 1rem 1rem 0;
@@ -56,15 +70,22 @@
     transition: all ease 0.23s;
 
     &.is-active {
-      font-size: 2.25rem;
+      font-size: 1.5rem;
       font-weight: bold;
       text-shadow: 0 0 #333;
     }
 
     &:hover {
       cursor: pointer;
-      font-size: 2.25rem;
+      font-size: 1.5rem;
       text-shadow: 0 0 #333;
+    }
+
+    @media all and (min-width: 500px) {
+      &.is-active,
+      &:hover {
+        font-size: 2.25rem;
+      }
     }
   }
 }
@@ -81,6 +102,9 @@
   opacity: 0;
   display: none; 
   transform: all ease 0.5s;
+  flex-direction: column;
+
+
 
   &.is-active { 
     display: flex;
@@ -90,20 +114,22 @@
 
 .travelDirections {
   height: 100%;
-  text-align: left;
+  text-align: center;
 
   .directions-wrapper {
     display: flex;
     flex-direction: row;
 
     .directions-texts-wrapper {
-      width: 40%;
       display: flex;
      flex-direction: column;
      border: 1px solid black;
      padding: 1rem;
-    }
 
+     p {
+      margin: 1rem auto 0rem auto;
+     }
+    }
   }
 }
 
@@ -114,16 +140,26 @@
   align-items: center;
   text-align: justify;
 
+  @media all and (min-width: 900px) {
+    flex-direction: row;
+  }
+
 }
 
 .hotelItem {
   border: 1px solid #333;
   height: 80%;
-  width: 30%;
 
   display: grid;
   align-items: center;
   justify-content: center;
+
+  margin-bottom: 1rem;
+
+
+  @media all and (min-width: 900px) {
+    width: 30%;
+  }
 
   .wrapper {
       padding: 1rem 2rem;
@@ -147,6 +183,7 @@
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
     font-weight: bold;
+    text-shadow: 0 0 black;
   }
 
   .blurb {

@@ -2,21 +2,35 @@
 
 
 .venueContainer.bodyContainerItem {
-  height: 100vh;
-  flex-direction: row;
+
+  flex-direction: column;
   justify-content: center;
   align-items:center;
-  background: #927c68;
   display: flex;
-  padding-top: 5rem;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+
+  font-family: $textFont;
+
+  @media all and (min-width: 900px) {
+    padding-top: 5rem;
+    flex-direction: row;
+    height: 100vh;
+  }
+
 
 }
 
 .venue-bg-container {
-  width: 33%;
-  height: 85%;
-  margin: 1rem;
-  margin-right: 4rem;
+  display: none;
+
+  @media all and (min-width: 900px) {
+      display: block;
+      width: 33%;
+      height: 85%;
+      margin: 1rem;
+      margin-right: 4rem;
+  }
 }
 
 .venue-bg {
@@ -31,18 +45,24 @@
 
 .venue-text {
   border: 1px solid black; // Might leave the border. 
-  width: 50%;
-  height: 85%;
+  width: 90%;
   text-align: center;
-  padding: 1rem 9rem;
+
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
+
+  @media all and (min-width: 900px) {
+    height: 85%;
+    padding: 1rem 9rem;
+    width: 50%;
+  }
+
 }
 
 .venue-text-header {
-  font-size: 2.5rem;
+  font-size: 2em;
   font-weight: bold;
   display: flex;
   justify-content: center;
@@ -57,9 +77,21 @@
     justify-self: center;
     margin: 0.5rem 0;
   }
+
+  @media all and (min-width: 900px) {
+    font-size: 2.5rem;
+  }
 }
 
 .venue-blurb {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
+
+  strong {
+    text-shadow: 0 0 black;
+  }
+
+  @media all and (min-width: 900px) {
+    font-size: 1.5rem;
+  }
 }
 

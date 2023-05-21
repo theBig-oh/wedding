@@ -3,25 +3,37 @@
 .registery-page.text-page {
   flex-direction: column;
   align-items:start;
-  background: #927c68;
   display: flex;
-  padding-top: 5rem;
-  height: 850px;
+
+  @media all and (min-width: 900px) {
+  	height: 850px;
+  	padding-top: 5rem;
+  }
 }
 
 .register-wrapper {
 	  height: 90%;
   text-align: center;
-  padding:1rem 9rem;
+  padding:1rem;
   display: flex;
   align-items: start;
   flex-direction: column;
   width: 100%;
+
+  @media all and (min-width: 900px) {
+  	padding: 1rem 9rem;
+  }
+
 }
 
 .register-body-wrapper {
 	width: 100%;
 	display: flex;
+	flex-direction: column;
+
+	@media all and (min-width: 500px) {
+		flex-direction: row;
+	}
 }
 
 .registerTitle {
@@ -44,21 +56,30 @@
 }
 
 .registerPageText {
-	width: 40%;
     display: flex;
     flex-direction: column;
     border: 1px solid black;
     padding: 1rem;
     font-size: 1.5rem;
-    text-align: left;
+    text-align: center;
     margin-top: 1rem;
+
+    @media all and (min-width: 900px) {
+    	width: 40%;
+    }
+
 }
 
-.registerPageItem {
-	width: 60%;
+.reigsterItemContainer {
+	height: 200px; 
 	display: flex;
 	justify-content: space-evenly;
 	flex-wrap: wrap;
+
+
+	@media all and (min-width: 600px) {
+		width: 60%;
+	}
 
 	.regItemContain {
 		width: 40%;

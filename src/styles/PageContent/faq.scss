@@ -3,20 +3,26 @@
 .faq-page.text-page {
   flex-direction: column;
   align-items:start;
-  background: #927c68;
   display: flex;
-  padding-top: 5rem;
-  height: 850px;
+
+  @media all and (min-width: 900px) {
+    padding-top: 5rem;
+    height: 850px;
+  }
 }
 
 .faq-wrapper {
-	  height: 90%;
-  text-align: center;
-  padding:1rem 9rem;
+    height: 90%;
+  padding:1rem;
   display: flex;
   align-items: start;
   flex-direction: column;
   width: 100%;
+
+  @media all and (min-width: 900px) {
+    padding: 1rem 9rem;
+  }
+
 }
 
 .faq-body-wrapper {
@@ -32,6 +38,7 @@
   flex-direction: column;
   width: 100%;
   align-items: start;
+  text-align: left;
 
   &::after {
     display: flex;
@@ -44,13 +51,12 @@
 }
 
 .faqPageText {
-	width: 60%;
     display: flex;
     flex-direction: column;
     border: 1px solid black;
     padding: 1rem;
     font-size: 1.5rem;
-    text-align: left;
+    text-align: center;
     margin-top: 1rem;
 
     a {

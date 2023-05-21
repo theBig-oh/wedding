@@ -114,6 +114,10 @@ h1, h2, h3, h4, h5 {
   height: 200px;
   width: 400px; }
 
+.titleOuterContainer.bodyContainerItem {
+  border: 5px solid black;
+  height: 80vh; }
+
 /* 
   Fonts
  */
@@ -132,23 +136,38 @@ h1, h2, h3, h4, h5 {
   display: grid;
   grid-template-areas: 'logo links';
   z-index: 10;
-  transition: all ease 0.3s;
+  transition: all ease 0.5s;
   background: #efdacd24; }
+  .navbar.is-active {
+    background: #efdacd55; }
+
+.navbarMobile {
+  display: flex;
+  flex-direction: column; }
+  @media all and (min-width: 500px) {
+    .navbarMobile {
+      display: none; } }
 
 .navlogo {
   background: url(../../assets/images/initials-white-trans.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  margin-left: 2rem;
+  margin-left: 1rem;
   height: 50px;
   width: 70px;
   grid-area: logo; }
   .navbar.on-scroll .navlogo {
     height: 75px; }
+  .navbar > .navlogo {
+    display: none;
+    margin-left: 2rem; }
+    @media all and (min-width: 500px) {
+      .navbar > .navlogo {
+        display: block; } }
 
 .navbarcontainer {
-  display: flex;
+  display: none;
   flex-direction: row;
   justify-content: center;
   height: 100%;
@@ -159,6 +178,24 @@ h1, h2, h3, h4, h5 {
   .on-scroll .navbarcontainer {
     height: 100%;
     align-items: center; }
+  .navbar > .navbarcontainer {
+    display: none; }
+    @media all and (min-width: 500px) {
+      .navbar > .navbarcontainer {
+        display: flex; } }
+  .navbarMobile .navbarcontainer {
+    flex-direction: column;
+    display: flex;
+    transform: translate(0, -600%);
+    transition: all ease 0.35s;
+    opacity: 0;
+    pointer-events: none;
+    height: 0; }
+  .navbarMobile .navbarcontainer.is-active {
+    height: auto;
+    opacity: 1;
+    transform: translate(0, 0%);
+    pointer-events: auto; }
 
 .navlinkItem {
   color: white;
@@ -177,6 +214,10 @@ h1, h2, h3, h4, h5 {
     /*     background: #e2c2af47;
  */
     background: linear-gradient(to right, rgba(226, 194, 175, 0) 0%, rgba(226, 194, 175, 0.2) 50%, rgba(226, 194, 175, 0) 100%); }
+  .navbarMobile .navlinkItem {
+    display: none; }
+  .navbarcontainer.is-active .navlinkItem {
+    display: flex; }
 
 /* On scroll events */
 .on-scroll {
@@ -199,19 +240,28 @@ h1, h2, h3, h4, h5 {
 
  */
 .venueContainer.bodyContainerItem {
-  height: 100vh;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: #927c68;
   display: flex;
-  padding-top: 5rem; }
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  font-family: "Cormorant Garamond", serif; }
+  @media all and (min-width: 900px) {
+    .venueContainer.bodyContainerItem {
+      padding-top: 5rem;
+      flex-direction: row;
+      height: 100vh; } }
 
 .venue-bg-container {
-  width: 33%;
-  height: 85%;
-  margin: 1rem;
-  margin-right: 4rem; }
+  display: none; }
+  @media all and (min-width: 900px) {
+    .venue-bg-container {
+      display: block;
+      width: 33%;
+      height: 85%;
+      margin: 1rem;
+      margin-right: 4rem; } }
 
 .venue-bg {
   width: 100%;
@@ -222,17 +272,20 @@ h1, h2, h3, h4, h5 {
 
 .venue-text {
   border: 1px solid black;
-  width: 50%;
-  height: 85%;
+  width: 90%;
   text-align: center;
-  padding: 1rem 9rem;
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center; }
+  @media all and (min-width: 900px) {
+    .venue-text {
+      height: 85%;
+      padding: 1rem 9rem;
+      width: 50%; } }
 
 .venue-text-header {
-  font-size: 2.5rem;
+  font-size: 2em;
   font-weight: bold;
   display: flex;
   justify-content: center;
@@ -245,9 +298,17 @@ h1, h2, h3, h4, h5 {
     width: 60%;
     justify-self: center;
     margin: 0.5rem 0; }
+  @media all and (min-width: 900px) {
+    .venue-text-header {
+      font-size: 2.5rem; } }
 
 .venue-blurb {
-  font-size: 1.5rem; }
+  font-size: 1.3rem; }
+  .venue-blurb strong {
+    text-shadow: 0 0 black; }
+  @media all and (min-width: 900px) {
+    .venue-blurb {
+      font-size: 1.5rem; } }
 
 /* 
   Fonts
@@ -261,13 +322,16 @@ h1, h2, h3, h4, h5 {
 
  */
 .spacer.bodyContainerItem {
-  height: 100vh;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
-  overflow: hidden; }
+  overflow: hidden;
+  height: 50vh; }
+  @media all and (min-width: 900px) {
+    .spacer.bodyContainerItem {
+      height: 100vh; } }
 
 .spacerImage {
   height: 100%;
@@ -276,36 +340,49 @@ h1, h2, h3, h4, h5 {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  background-attachment: fixed;
   filter: grayscale(50%);
   box-shadow: inset 0px 6px 14px 0px rgba(32, 32, 32, 0.54), inset 0px -10px 14px 0px rgba(32, 32, 32, 0.54); }
+  @media all and (min-width: 900px) {
+    .spacerImage {
+      background-attachment: fixed; } }
 
 .spacerName {
-  position: relative;
+  position: absolute;
   z-index: 3;
-  height: 200px;
-  width: 400px;
   font-size: 3rem;
   color: white;
   font-family: "Cormorant Infant", serif;
   text-transform: uppercase; }
   .spacer:not(.spacer_Intro) .spacerName {
-    position: absolute;
-    left: 40px;
-    bottom: 0;
+    left: 30px;
+    bottom: 10px;
     font-weight: bold;
-    font-size: 5rem;
     display: flex;
     align-items: center; }
+  @media all and (min-width: 900px) {
+    .spacerName {
+      height: 200px;
+      width: 400px;
+      left: 40px;
+      bottom: 0;
+      font-size: 5rem; } }
 
 /* INTRO SECTION -- INTRO CONTEXT */
-.spacer_Intro .spacerImage {
+.spacer_Intro.bodyContainerItem .spacerImage {
   background-size: cover; }
 
-.spacer_Intro .spacerName {
-  background: url(../../assets/images/initials-white-trans.png);
+.spacer_Intro.bodyContainerItem .spacerName {
+  background: url(../../assets/images/monogram-white-trans.png);
   background-size: contain;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  height: 180px;
+  width: 280px;
+  bottom: 40px;
+  left: 20px; }
+  @media all and (min-width: 900px) {
+    .spacer_Intro.bodyContainerItem .spacerName {
+      height: 360px;
+      width: 560px; } }
 
 /* TRAVEL -- CARTAGENA CONTEXT 
 
@@ -346,8 +423,8 @@ h1, h2, h3, h4, h5 {
 .TravelContainer.bodyContainerItem {
   flex-direction: row;
   align-items: center;
-  background: #927c68;
-  display: flex; }
+  display: flex;
+  font-family: "Cormorant Garamond", serif; }
   @media all and (min-width: 900px) {
     .TravelContainer.bodyContainerItem {
       height: 900px; } }
@@ -355,12 +432,16 @@ h1, h2, h3, h4, h5 {
 .Travel-text {
   height: 90%;
   text-align: center;
-  padding: 1rem 9rem;
+  padding: 1rem;
   display: flex;
   align-items: start;
   flex-direction: column;
   justify-content: center;
   width: 100%; }
+  @media all and (min-width: 500px) {
+    .Travel-text {
+      height: 90%;
+      padding: 1rem 9rem; } }
 
 .Travel-text-header {
   font-size: 2.5rem;
@@ -379,21 +460,29 @@ h1, h2, h3, h4, h5 {
 .travelTextNav {
   display: flex;
   flex-direction: row;
-  font-size: 2rem;
-  justify-content: space-evenly;
-  transition: all ease 0.25s; }
+  font-size: 1.3rem;
+  transition: all ease 0.25s;
+  text-align: center;
+  margin: 0 auto; }
+  @media all and (min-width: 500px) {
+    .travelTextNav {
+      flex-direction: row;
+      justify-content: space-evenly; } }
   .travelTextNav .travelTextNavItem {
     margin: 1rem 1rem 1rem 0;
     border-bottom: 1px solid #333;
     transition: all ease 0.23s; }
     .travelTextNav .travelTextNavItem.is-active {
-      font-size: 2.25rem;
+      font-size: 1.5rem;
       font-weight: bold;
       text-shadow: 0 0 #333; }
     .travelTextNav .travelTextNavItem:hover {
       cursor: pointer;
-      font-size: 2.25rem;
+      font-size: 1.5rem;
       text-shadow: 0 0 #333; }
+    @media all and (min-width: 500px) {
+      .travelTextNav .travelTextNavItem.is-active, .travelTextNav .travelTextNavItem:hover {
+        font-size: 2.25rem; } }
 
 .Travel-blurb {
   font-size: 1.5rem;
@@ -403,37 +492,45 @@ h1, h2, h3, h4, h5 {
 .travelBlurbItem {
   opacity: 0;
   display: none;
-  transform: all ease 0.5s; }
+  transform: all ease 0.5s;
+  flex-direction: column; }
   .travelBlurbItem.is-active {
     display: flex;
     opacity: 1; }
 
 .travelDirections {
   height: 100%;
-  text-align: left; }
+  text-align: center; }
   .travelDirections .directions-wrapper {
     display: flex;
     flex-direction: row; }
     .travelDirections .directions-wrapper .directions-texts-wrapper {
-      width: 40%;
       display: flex;
       flex-direction: column;
       border: 1px solid black;
       padding: 1rem; }
+      .travelDirections .directions-wrapper .directions-texts-wrapper p {
+        margin: 1rem auto 0rem auto; }
 
 .travelHotel {
   justify-content: space-evenly;
   height: 100%;
   align-items: center;
   text-align: justify; }
+  @media all and (min-width: 900px) {
+    .travelHotel {
+      flex-direction: row; } }
 
 .hotelItem {
   border: 1px solid #333;
   height: 80%;
-  width: 30%;
   display: grid;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  margin-bottom: 1rem; }
+  @media all and (min-width: 900px) {
+    .hotelItem {
+      width: 30%; } }
   .hotelItem .wrapper {
     padding: 1rem 2rem; }
   .hotelItem .name {
@@ -449,7 +546,8 @@ h1, h2, h3, h4, h5 {
   .hotelItem .price {
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
-    font-weight: bold; }
+    font-weight: bold;
+    text-shadow: 0 0 black; }
   .hotelItem .blurb {
     font-size: 1.3rem; }
   .hotelItem.hotelItem-0 {
@@ -524,23 +622,31 @@ h1, h2, h3, h4, h5 {
 .registery-page.text-page {
   flex-direction: column;
   align-items: start;
-  background: #927c68;
-  display: flex;
-  padding-top: 5rem;
-  height: 850px; }
+  display: flex; }
+  @media all and (min-width: 900px) {
+    .registery-page.text-page {
+      height: 850px;
+      padding-top: 5rem; } }
 
 .register-wrapper {
   height: 90%;
   text-align: center;
-  padding: 1rem 9rem;
+  padding: 1rem;
   display: flex;
   align-items: start;
   flex-direction: column;
   width: 100%; }
+  @media all and (min-width: 900px) {
+    .register-wrapper {
+      padding: 1rem 9rem; } }
 
 .register-body-wrapper {
   width: 100%;
-  display: flex; }
+  display: flex;
+  flex-direction: column; }
+  @media all and (min-width: 500px) {
+    .register-body-wrapper {
+      flex-direction: row; } }
 
 .registerTitle {
   font-size: 2.5rem;
@@ -559,27 +665,32 @@ h1, h2, h3, h4, h5 {
     margin: 0.5rem 0; }
 
 .registerPageText {
-  width: 40%;
   display: flex;
   flex-direction: column;
   border: 1px solid black;
   padding: 1rem;
   font-size: 1.5rem;
-  text-align: left;
+  text-align: center;
   margin-top: 1rem; }
+  @media all and (min-width: 900px) {
+    .registerPageText {
+      width: 40%; } }
 
-.registerPageItem {
-  width: 60%;
+.reigsterItemContainer {
+  height: 200px;
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap; }
-  .registerPageItem .regItemContain {
+  @media all and (min-width: 600px) {
+    .reigsterItemContainer {
+      width: 60%; } }
+  .reigsterItemContainer .regItemContain {
     width: 40%;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
     transition: all ease 0.25s; }
-    .registerPageItem .regItemContain:hover {
+    .reigsterItemContainer .regItemContain:hover {
       transform: scale(1.15); }
 
 /* 
@@ -596,19 +707,22 @@ h1, h2, h3, h4, h5 {
 .faq-page.text-page {
   flex-direction: column;
   align-items: start;
-  background: #927c68;
-  display: flex;
-  padding-top: 5rem;
-  height: 850px; }
+  display: flex; }
+  @media all and (min-width: 900px) {
+    .faq-page.text-page {
+      padding-top: 5rem;
+      height: 850px; } }
 
 .faq-wrapper {
   height: 90%;
-  text-align: center;
-  padding: 1rem 9rem;
+  padding: 1rem;
   display: flex;
   align-items: start;
   flex-direction: column;
   width: 100%; }
+  @media all and (min-width: 900px) {
+    .faq-wrapper {
+      padding: 1rem 9rem; } }
 
 .faq-body-wrapper {
   width: 100%;
@@ -621,7 +735,8 @@ h1, h2, h3, h4, h5 {
   justify-content: center;
   flex-direction: column;
   width: 100%;
-  align-items: start; }
+  align-items: start;
+  text-align: left; }
   .faqTitle::after {
     display: flex;
     content: ' ';
@@ -631,13 +746,12 @@ h1, h2, h3, h4, h5 {
     margin: 0.5rem 0; }
 
 .faqPageText {
-  width: 60%;
   display: flex;
   flex-direction: column;
   border: 1px solid black;
   padding: 1rem;
   font-size: 1.5rem;
-  text-align: left;
+  text-align: center;
   margin-top: 1rem; }
   .faqPageText a {
     color: #ccc;
@@ -675,11 +789,16 @@ body {
 .bodyContainerItem {
   transition: all ease 0.3s;
   background: transparent;
-  height: 100vh;
   position: relative; }
 
 .text-page {
-  background: #927c68; }
+  font-family: "Cormorant Garamond", serif;
+  text-align: center;
+  background-color: #927c68;
+  background-image: url("https://www.transparenttextures.com/patterns/exclusive-paper.png");
+  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */ }
+  .text-page p {
+    margin: 1rem auto 0rem auto; }
   @media all and (min-width: 920px) {
     .text-page {
       height: 1080px; } }
@@ -687,4 +806,6 @@ body {
 .toc-marker {
   position: absolute;
   top: -200px; }
+  .venueContainer .toc-marker {
+    top: -0px; }
 

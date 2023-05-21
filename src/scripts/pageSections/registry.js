@@ -11,12 +11,12 @@ function RegisterPage(regItems) {
     console.log(regItems);
     const registerWrapper = makeEle.createEle('div','Register-wrapper', null, ['register-wrapper']);
     const registerPageTitle = makeEle.createEle('div','Register-Title', null, ['registerPageItem', 'registerTitle']);
-    const registerPageText = makeEle.createEle('div','Register-page-text', null, ['registerPageItem','registerPageText']);
+    const registerPageText = makeEle.createEle('div','Register-page-text', null, ['registerPageText']);
 
     const registerBodyWrapper = makeEle.createEle('div','Register-body-wrapper', null, 'register-body-wrapper');
 
 
-    const registerItemsContainer = makeEle.createEle('div','Register-Item-Container', null,['registerPageItem','reigsterItemContainer']);
+    const registerItemsContainer = makeEle.createEle('div','Register-Item-Container', null,['reigsterItemContainer']);
 
     registerPageTitle.innerHTML = `
       <div class="title">
@@ -24,6 +24,7 @@ function RegisterPage(regItems) {
       </div>
     `;
 
+    //Possible change copy when on mobile breakpoint. Make copy more digestable. 
     registerPageText.innerHTML = `
         <div class="text"> 
           <div class="register-text">
@@ -43,8 +44,6 @@ function RegisterPage(regItems) {
           <div class="register-text">
               <p>Thanks for joining us on this exciting journey. Can't wait to see you and celebrate together!</p>
           </div>
-
-
         </div>
     `;
 

@@ -32,12 +32,11 @@ var data = {
 	/* Hotels And Venue */
   	"location": [
 		{
-			"name": "Sofiatel Santa Clara",
+			"name": "Sofitel Santa Clara",
 			"link": "",
 			"address": "",
 			"map": "",
 			"venueBlurb": `<div>
-       			 <h3>Our Wedding in Cartagena, Colombia</h3>
         			<p>Our wedding will be held at the <br></br><strong>Sofitel Hotel in Cartagena, Colombia</strong><br/><br/> A stunning venue located in the heart of the historic walled city.</p>
         	<p>With its elegant decor and amazing views, it's the perfect place for our dream wedding.</p>
         	<p>The hotel's event planning team is here to help us with everything, so we can relax and enjoy our special day.</p>
