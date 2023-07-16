@@ -42,7 +42,7 @@ var data = {
         	<p>The hotel's event planning team is here to help us with everything, so we can relax and enjoy our special day.</p>
         	<p>Can't wait to celebrate with you there!</p>
       		</div>`,
-      		"blurb": "Stay in luxury at Sofitel Santa Clara, a beautifully restored 17th-century convent in the heart of Cartagena's historic district. This hotel offers elegantly appointed rooms and suites, an on-site spa, and a stunning outdoor pool, as well as a restaurant serving delicious cuisine in a beautiful courtyard setting. With its prime location and excellent service, Sofitel Santa Clara is the perfect place to stay for a luxurious and unforgettable visit to Cartagena.",
+      		"blurb": "Get ready to experience luxury and history at our wedding venue and accommodation. This beautifully restored 17th-century convent in Cartagena's historic center offers an enchanting setting with spacious rooms, lush gardens, and a rooftop pool to make our special day unforgettable.",
 			"isVenue": true,
 			"priceRange": "$$$$",
 			"images": [
@@ -52,17 +52,17 @@ var data = {
 				] 
 		},
 		{
-			"name": "Hotel Delirio",
-			"link": "https://www.deliriohotel.co/",
+			"name": "Bastion Luxury Hotel",
+			"link": "https://en.bastionluxuryhotel.com/",
 			"address": "",
 			"map": "",
-			"blurb": "Discover the ultimate in luxury and style at Hotel Delirio, a boutique hotel located in the heart of Cartagena's historic district. Enjoy beautifully designed rooms, a rooftop terrace with a pool, and top-notch amenities like Egyptian cotton sheets and plush bathrobes. The friendly and attentive hotel staff is ready to help you with anything you need during your stay, making Hotel Delirio the perfect choice for a memorable and luxurious visit to Cartagena.",
+			"blurb": "Experience luxury and enchantment at Bastion Luxury Hotel in Cartagena. Situated within the historic walls, this boutique hotel offers a fusion of historic charm and modern opulence, featuring elegantly designed rooms, a rooftop pool, and gourmet dining, all within easy reach of Cartagena's iconic sites and vibrant nightlife.",
 			"isVenue": false,
-			"priceRange": "$$",
+			"priceRange": "$$$",
 			"images": [
-				"../../public/assets/images/location/hotels/delirio-1.jpg",
-				"../../public/assets/images/location/hotels/delirio-2.jpg",
-				"../../public/assets/images/location/hotels/delirio-3.jpg"
+				"../../public/assets/images/location/hotels/bastion-1.jpg",
+				"../../public/assets/images/location/hotels/bastion-2.jpg",
+				"../../public/assets/images/location/hotels/bastion-3.jpg"
 				]
 		},
 		{
@@ -77,6 +77,20 @@ var data = {
 				"../../public/assets/images/location/hotels/bantu-1.jpg",
 				"../../public/assets/images/location/hotels/bantu-2.jpg",
 				"../../public/assets/images/location/hotels/bantu-3.jpg"
+				]
+		},
+		{
+			"name": "Nacar Hotel Cartagena",
+			"link": "https://www.hilton.com/en/hotels/ctgmaqq-nacar-hotel-cartagena/",
+			"address": "",
+			"map": "",
+			"blurb": "Discover modern elegance and personalized service at Nacar Hotel in Cartagena. Located in the historic district, this boutique hotel combines contemporary design with colonial charm, providing stylish rooms and a rooftop terrace with panoramic city views.",
+			"isVenue": false,
+			"priceRange": "$$",
+			"images": [
+				"../../public/assets/images/location/hotels/nacar-1.jpg",
+				"../../public/assets/images/location/hotels/nacar-2.jpg",
+				"../../public/assets/images/location/hotels/nacar-3.jpeg"
 				]
 		}
 	],
@@ -114,28 +128,3 @@ var data = {
 		 
 
 export default data;
-
-
-/*                "Programming": {
-				  "ES6": {
-					"level": 7,
-				  },
-				  "ReactJS": {
-					  "level": 6
-				  },
-				  "AngularJS": {
-					  "level": 6
-				  },
-				  "Ruby": {
-					"level":6
-				  },
-				},
-				"Design": {
-				  "Adobe Illustrator": {
-					"level": 8,
-				  },
-				  "CSS": {
-					"level": 9,
-				  },
-				  ""
-				}*/
