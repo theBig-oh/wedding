@@ -23,7 +23,7 @@
   justify-content: center;
   width: 100%;
 
-  @media all and (min-width: 500px) {
+  @media all and (min-width: 900px) {
     height: 90%;
     padding: 1rem 9rem;
 
@@ -60,6 +60,7 @@
   @media all and (min-width: 500px) {
     flex-direction: row;
     justify-content: space-evenly;
+    font-size: 2rem;
 
   }
 
@@ -81,7 +82,7 @@
       text-shadow: 0 0 #333;
     }
 
-    @media all and (min-width: 500px) {
+    @media all and (min-width: 900px) {
       &.is-active,
       &:hover {
         font-size: 2.25rem;
@@ -163,12 +164,17 @@
 
   .wrapper {
       padding: 1rem 2rem;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
   }
 
   .name {
     font-size: 2rem;
     text-transform: uppercase;
     font-weight: bold;
+    width: 100%;
 
     &:after {
       content: " ";
@@ -184,6 +190,18 @@
     margin-bottom: 0.5rem;
     font-weight: bold;
     text-shadow: 0 0 black;
+    width: 30%;
+  }
+
+  .link {
+    display: flex;
+    align-items: center;
+    color: #3b3b3b; // I have no clue where this color is being called from for the base text. Need to research this.
+
+    &:hover {
+      color: #5d5d5d;
+    }
+
   }
 
   .blurb {

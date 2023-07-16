@@ -54,11 +54,11 @@ function RegisterPage(regItems) {
 
         regItemsContain.innerHTML = `
           <div class="name">
+            ${x.displayText}
           </div>
         `;
 
         regItemsContain.href = x.url;
-        regItemsContain.style.backgroundImage = "url("+x.img+ ")";
 
         registerItemsContainer.append(regItemsContain);
       })

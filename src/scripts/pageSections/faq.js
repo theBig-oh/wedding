@@ -16,7 +16,7 @@ function FaqPage() {
 
     faqPageTitle.innerHTML = `
       <div class="title">
-        The Frequently Asked Questions
+        Frequently Asked Questions
       </div>
     `;
 

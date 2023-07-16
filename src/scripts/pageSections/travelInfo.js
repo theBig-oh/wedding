@@ -79,6 +79,7 @@ const TravelInfo = function(locations) {
         <div class="wrapper">
           <div class="name"> ${x.name} </div>
           <div class="price"> ${x.priceRange} </div>
+          <a class="link" href="${x.link}"> Hotel Website </a>
           <div class="blurb"> ${x.blurb} </div>
         </div>
     `;
