@@ -149,7 +149,7 @@
 
 .hotelItem {
   border: 1px solid #333;
-  height: 80%;
+  height: 90%;
 
   display: grid;
   align-items: center;
@@ -159,7 +159,7 @@
 
 
   @media all and (min-width: 900px) {
-    width: 30%;
+    width: 23%;
   }
 
   .wrapper {
@@ -175,6 +175,7 @@
     text-transform: uppercase;
     font-weight: bold;
     width: 100%;
+    text-align: left;
 
     &:after {
       content: " ";
@@ -206,19 +207,6 @@
 
   .blurb {
     font-size: 1.3rem;
-  }
-
-  &.hotelItem-0 {
-    order: 2;
-    height: 90%;
-  }
-
-  &.hotelItem-1 {
-    order: 1;
-  }
-
-  &.hotelItem-2 {
-    order: 3;
   }
 }
 
@@ -258,10 +246,6 @@
       box-shadow: -6px 0px 2px -1px rgba(0, 0, 0, 0.53);
     }
    }
-
-  .hotelItem-0 & {
-    height: 150px;
-  }
 }
 
 
