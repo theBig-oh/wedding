@@ -6,8 +6,9 @@
   display: flex;
 
   @media all and (min-width: 900px) {
-  	height: 850px;
+  	height: auto;
   	padding-top: 5rem;
+  	padding-bottom: 5rem;
   }
 }
 
@@ -31,7 +32,7 @@
 	display: flex;
 	flex-direction: column;
 
-	@media all and (min-width: 500px) {
+	@media all and (min-width: 900px) {
 		flex-direction: row;
 	}
 }
@@ -65,7 +66,7 @@
     margin-top: 1rem;
 
     @media all and (min-width: 900px) {
-    	width: 40%;
+    	width: 60%;
     }
 
 }
@@ -75,21 +76,28 @@
 	display: flex;
 	justify-content: space-evenly;
 	flex-wrap: wrap;
+	font-family: $textFont;
+	color: #333;
+	margin-top: 1rem;
 
-
-	@media all and (min-width: 600px) {
+	@media all and (min-width: 900px) {
 		width: 60%;
 	}
 
 	.regItemContain {
-		width: 40%;
+		color: #333;
+		width: 100%;
 		background-size: contain;
-		background-repeat: no-repeat;
+		font-size: 2rem;
 		background-position: center;
 		transition: all ease 0.25s;
 
 		&:hover {
 	      	transform: scale(1.15);
+		}
+
+		@media all and (min-width: 600px) {
+			width: 40%;
 		}
 	}
 }

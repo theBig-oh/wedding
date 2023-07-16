@@ -33,7 +33,7 @@ var data = {
   	"location": [
 		{
 			"name": "Sofitel Santa Clara",
-			"link": "",
+			"link": "https://www.sofitellegendsantaclara.com/",
 			"address": "",
 			"map": "",
 			"venueBlurb": `<div>
@@ -97,9 +97,9 @@ var data = {
 			},
 			{
 				"name": "amazon",
-				"url": "",
+				"url": "https://www.amazon.com/wedding/alexandra-grosso-oscar-medrano--march-2024/registry/1U4IGJMYAEZAW",
 				"img": "",
-				"displayText": ""
+				"displayText": "Amazon"
 
 			},
 			{
