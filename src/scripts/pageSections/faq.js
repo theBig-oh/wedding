@@ -10,7 +10,7 @@ function FaqPage() {
 
     const faqWrapper = makeEle.createEle('div','faq-wrapper', null, ['faq-wrapper']);
     const faqPageTitle = makeEle.createEle('div','faq-Title', null, ['faqPageItem', 'faqTitle']);
-    const faqPageText = makeEle.createEle('div','faq-page-text', null, ['faqPageItem','faqPageText']);
+    const faqPageText = makeEle.createEle('div','faq-page-text', null, ['faqPageItem','faqPageText','textPageTextContainer']);
 
     const faqBodyWrapper = makeEle.createEle('div','faq-body-wrapper', null, 'faq-body-wrapper');
 

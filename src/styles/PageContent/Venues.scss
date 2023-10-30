@@ -39,15 +39,20 @@
   background-repeat: no-repeat;
   background-size: cover;
   filter: grayscale(60%);
+
+
+  box-shadow: 0px 0px 50px #666;
+
+
 }
 
 
 
 .venue-text {
-  border: 1px solid black; // Might leave the border. 
+  border-radius: 5px;
   width: 90%;
   text-align: center;
-
+  padding: 2rem;
   display: flex;
   align-items: center;
   flex-direction: column;

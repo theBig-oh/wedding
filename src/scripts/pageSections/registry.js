@@ -11,7 +11,7 @@ function RegisterPage(regItems) {
     console.log(regItems);
     const registerWrapper = makeEle.createEle('div','Register-wrapper', null, ['register-wrapper']);
     const registerPageTitle = makeEle.createEle('div','Register-Title', null, ['registerPageItem', 'registerTitle']);
-    const registerPageText = makeEle.createEle('div','Register-page-text', null, ['registerPageText']);
+    const registerPageText = makeEle.createEle('div','Register-page-text', null, ['registerPageText','textPageTextContainer']);
 
     const registerBodyWrapper = makeEle.createEle('div','Register-body-wrapper', null, 'register-body-wrapper');
 
@@ -50,7 +50,7 @@ function RegisterPage(regItems) {
     regItems.forEach((x,i) => {
         console.log(x);
 
-        let regItemsContain = makeEle.createEle('a', 'regItemContain', null, 'regItemContain');
+        let regItemsContain = makeEle.createEle('a', 'regItemContain', null, ['regItemContain','textPageTextContainer']);
 
         regItemsContain.innerHTML = `
           <div class="name">

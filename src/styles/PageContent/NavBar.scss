@@ -8,10 +8,10 @@
   grid-template-areas: 'logo links';
   z-index: 10;
   transition: all ease 0.5s;
-  background: #efdacd24;
+  background: #334a3f47;
 
   &.is-active {
-    background: #efdacd55;    
+    background: #334a3f47;    
   }
 
 }

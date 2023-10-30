@@ -6,11 +6,11 @@ import linkedin from '../../css/Assets/Icons/linkedin.svg';
 import instagram from '../../css/Assets/Icons/instagram.svg';
 */
 const TitlePage = function(PersonInfo) {
-  	const makeEle = new MakeElement;
-  	/*const svgArray = [email,linkedin,github,instagram]*/
-  	const svgArray = ['1','2','3'];
+    const makeEle = new MakeElement;
+    /*const svgArray = [email,linkedin,github,instagram]*/
+    const svgArray = ['1','2','3'];
 
-  	const mainContent = makeEle.createEle('div','titleMainContent',null,['titleOuterContainer','bodyContainerItem']);
+    const mainContent = makeEle.createEle('div','titleMainContent',null,['titleOuterContainer','bodyContainerItem']);
     const nameTitle = makeEle.createEle('div', 'titleName', null, 'titleName');
     const titleImage = makeEle.createEle('div', 'titleImage',null, 'titleImage');
 
@@ -23,7 +23,7 @@ const TitlePage = function(PersonInfo) {
         nameDiv.innerHTML = name.firstName + ' ' + name.lastName;
 
         nameTitle.append(nameDiv);
-    })	
+    })  
   */
 
   /*

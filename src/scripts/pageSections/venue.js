@@ -12,7 +12,7 @@ const Venues = function(venue) {
   const venueMainBg = makeEle.createEle('div','Venue-BG', null, ['venueContainerItem','venue-bg']);
   const venueMainBgContainer = makeEle.createEle('div','Venue-BG-container', null, ['venueContainerItem','venue-bg-container']);
   
-  const venueText = makeEle.createEle('div','Venue-Text', null, ['venue-text','venueContainerItem']);
+  const venueText = makeEle.createEle('div','Venue-Text', null, ['venue-text','venueContainerItem', 'textPageTextContainer']);
 
   const venueTextHeader = makeEle.createEle('div','Venue-Text-Header',null,['venue-text-header','venueTextItem']);
   const venueBlurb = makeEle.createEle('div','Venue-Blurb',null, ['venue-blurb','venueTextItem']);

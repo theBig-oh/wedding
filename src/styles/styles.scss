@@ -8,6 +8,9 @@ body {
   justify-content: center;
 }
 
+/* Global Classes */
+
+
 .bodyContain {
   display: flex;
   flex-direction: column;
@@ -25,13 +28,28 @@ body {
 
 .text-page {
   font-family: $textFont;
+  position: relative;
 
-  text-align: center;
+  text-align: center; 
 
-  background-color: #927c68;
-  background-image: url("https://www.transparenttextures.com/patterns/exclusive-paper.png");
-  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
-      
+  &::before {
+      background: url('../../public/assets/images/panels/painted-leaves.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 100%;
+      width: 100%;
+      content: ' ';
+      display: flex;
+      position: absolute;
+      top: 0;
+
+      z-index: -1;
+      filter: grayscale(0.45);
+
+
+  }
+
 
      p {
       margin: 1rem auto 0rem auto;
@@ -43,6 +61,24 @@ body {
     }
 }
 
+.textPageTextContainer {
+/*     background: #b2b59aee; Make transparent??? */
+    box-shadow: 0px 0px 50px #222;
+    border-radius: 5px;
+
+    background-color: #b2b59aee;
+background-image: url("https://www.transparenttextures.com/patterns/dark-denim.png");
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+
+
+}
+
+
+.imageContainer {
+  box-shadow: 0px 0px 10px #222
+}
+
+
 
 .toc-marker {
   position: absolute;
@@ -53,3 +89,21 @@ body {
     top: -0px;
   }
 }
+
+body::-webkit-scrollbar {
+  width: 12px;               /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: #47483d;        /* color of the tracking area */
+  box-shadow: inset 0px 0px 10px rgba(0,0,0,0.5);
+
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #b2b59aee;    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+  border: 1px solid #b2b59acc;
+  border-radius: 10px;  /* creates padding around scroll thumb */
+  box-shadow: inset 0px 0px 10px rgba(255,255,255,0.2);
+} 

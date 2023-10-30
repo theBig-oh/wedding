@@ -54,7 +54,7 @@ function RenderSite(){
                         NavBar(), 
                         Venues(Data.location),
                         Spacer(spacerInfo[1].context,spacerInfo[1].anyText,spacerInfo[1].image),
-                        TravelInfo(Data.location),
+                        TravelInfo(Data.location, Data.destination),
                         Spacer(spacerInfo[2].context,spacerInfo[2].anyText,spacerInfo[2].image),
                         RegisterPage(Data.registry),
                         Spacer(spacerInfo[3].context,spacerInfo[3].anyText,spacerInfo[3].image),
